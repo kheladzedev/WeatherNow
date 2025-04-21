@@ -6,17 +6,36 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		2B657DA02DB6D36B00F254C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B657D3E2DB6C9F300F254C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B657D452DB6C9F300F254C8;
+			remoteInfo = WeatherNow;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		2B657D462DB6C9F300F254C8 /* WeatherNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B657D9E2DB6D36B00F254C8 /* WeatherNowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherNowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
 		2B657D582DB6C9F400F254C8 /* Exceptions for "WeatherNow" folder in "WeatherNow" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				"App/WeatherNowTests/WeatherNowTests.swift .swift",
 				Info.plist,
 			);
 			target = 2B657D452DB6C9F300F254C8 /* WeatherNow */;
+		};
+		2B657DAA2DB6D3D000F254C8 /* Exceptions for "WeatherNow" folder in "WeatherNowTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"App/WeatherNowTests/WeatherNowTests.swift .swift",
+			);
+			target = 2B657D9D2DB6D36B00F254C8 /* WeatherNowTests */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -25,6 +44,7 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				2B657D582DB6C9F400F254C8 /* Exceptions for "WeatherNow" folder in "WeatherNow" target */,
+				2B657DAA2DB6D3D000F254C8 /* Exceptions for "WeatherNow" folder in "WeatherNowTests" target */,
 			);
 			path = WeatherNow;
 			sourceTree = "<group>";
@@ -33,6 +53,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		2B657D432DB6C9F300F254C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B657D9B2DB6D36B00F254C8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -54,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				2B657D462DB6C9F300F254C8 /* WeatherNow.app */,
+				2B657D9E2DB6D36B00F254C8 /* WeatherNowTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +111,26 @@
 			productReference = 2B657D462DB6C9F300F254C8 /* WeatherNow.app */;
 			productType = "com.apple.product-type.application";
 		};
+		2B657D9D2DB6D36B00F254C8 /* WeatherNowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B657DA42DB6D36B00F254C8 /* Build configuration list for PBXNativeTarget "WeatherNowTests" */;
+			buildPhases = (
+				2B657D9A2DB6D36B00F254C8 /* Sources */,
+				2B657D9B2DB6D36B00F254C8 /* Frameworks */,
+				2B657D9C2DB6D36B00F254C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B657DA12DB6D36B00F254C8 /* PBXTargetDependency */,
+			);
+			name = WeatherNowTests;
+			packageProductDependencies = (
+			);
+			productName = WeatherNowTests;
+			productReference = 2B657D9E2DB6D36B00F254C8 /* WeatherNowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -95,6 +143,10 @@
 				TargetAttributes = {
 					2B657D452DB6C9F300F254C8 = {
 						CreatedOnToolsVersion = 16.3;
+					};
+					2B657D9D2DB6D36B00F254C8 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 2B657D452DB6C9F300F254C8;
 					};
 				};
 			};
@@ -113,12 +165,20 @@
 			projectRoot = "";
 			targets = (
 				2B657D452DB6C9F300F254C8 /* WeatherNow */,
+				2B657D9D2DB6D36B00F254C8 /* WeatherNowTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2B657D442DB6C9F300F254C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B657D9C2DB6D36B00F254C8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -135,7 +195,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2B657D9A2DB6D36B00F254C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B657DA12DB6D36B00F254C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B657D452DB6C9F300F254C8 /* WeatherNow */;
+			targetProxy = 2B657DA02DB6D36B00F254C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2B657D5A2DB6C9F400F254C8 /* Debug */ = {
@@ -145,23 +220,30 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 374DGY6WA4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WeatherNow/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Мы используем вашу геопозицию для отображения прогноза погоды в вашем регионе";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = co.kheladzedev.WeatherNow.WeatherNow;
+				PRODUCT_BUNDLE_IDENTIFIER = co.kheladzedev.WeatherNow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -172,23 +254,30 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 374DGY6WA4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WeatherNow/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Мы используем вашу геопозицию для отображения прогноза погоды в вашем регионе";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = co.kheladzedev.WeatherNow.WeatherNow;
+				PRODUCT_BUNDLE_IDENTIFIER = co.kheladzedev.WeatherNow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -311,6 +400,54 @@
 			};
 			name = Release;
 		};
+		2B657DA22DB6D36B00F254C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 374DGY6WA4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.kheladzedev.WeatherNow.WeatherNowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeatherNow.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WeatherNow";
+				XROS_DEPLOYMENT_TARGET = 2.4;
+			};
+			name = Debug;
+		};
+		2B657DA32DB6D36B00F254C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 374DGY6WA4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.kheladzedev.WeatherNow.WeatherNowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeatherNow.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WeatherNow";
+				XROS_DEPLOYMENT_TARGET = 2.4;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -328,6 +465,15 @@
 			buildConfigurations = (
 				2B657D5A2DB6C9F400F254C8 /* Debug */,
 				2B657D5B2DB6C9F400F254C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B657DA42DB6D36B00F254C8 /* Build configuration list for PBXNativeTarget "WeatherNowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B657DA22DB6D36B00F254C8 /* Debug */,
+				2B657DA32DB6D36B00F254C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
